@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "kafkajs": "^2.2.4"
   },
   "name": "kafka",
   "version": "1.0.0",
   "main": "admin.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

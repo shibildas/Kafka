@@ -1,5 +1,7 @@
 const {Kafka}=require ("kafkajs");
+const dotenv= require("dotenv");
+dotenv.config();
 exports.kafka= new Kafka({
     clientId:"my-app",
-    brokers:["172.21.176.1:9092"],
+    brokers:[`${process.env.PRIVATE_IP}:9092`],
 });
